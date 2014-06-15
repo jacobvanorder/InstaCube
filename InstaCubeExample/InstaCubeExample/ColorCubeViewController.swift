@@ -41,5 +41,18 @@ enum ColorCubeFilterList : String {
     case vibrance = "colorCube_vibrance"
     case threshold = "colorCube_threshold"
     
+    var displayName : String {
+        switch self {
+            case .solarize:
+                return "Solarized"
+            case .vibrance:
+                return "Vibrance"
+            case .threshold:
+                return "Threshold"
+            default:
+                return "No display name"
+            }
+    }
+    
     static let allValues = [solarize, vibrance, threshold]
 }
