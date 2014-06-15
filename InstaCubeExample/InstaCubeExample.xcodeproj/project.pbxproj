@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7672F147194DE3E000BAAE5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7672F146194DE3E000BAAE5A /* main.m */; };
 		7672F14A194DE3E000BAAE5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7672F149194DE3E000BAAE5A /* AppDelegate.m */; };
-		7672F14D194DE3E000BAAE5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7672F14C194DE3E000BAAE5A /* ViewController.m */; };
 		7672F150194DE3E000BAAE5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7672F14E194DE3E000BAAE5A /* Main.storyboard */; };
 		7672F152194DE3E000BAAE5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7672F151194DE3E000BAAE5A /* Images.xcassets */; };
 		7672F15E194DE3E000BAAE5A /* InstaCubeExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7672F15D194DE3E000BAAE5A /* InstaCubeExampleTests.m */; };
@@ -18,6 +17,13 @@
 		7672F17E194DE3F800BAAE5A /* InstaCubeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7672F17D194DE3F800BAAE5A /* InstaCubeTests.m */; };
 		7672F181194DE3F800BAAE5A /* InstaCube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7672F16C194DE3F800BAAE5A /* InstaCube.framework */; };
 		7672F182194DE3F800BAAE5A /* InstaCube.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7672F16C194DE3F800BAAE5A /* InstaCube.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		7672F19C194DE83000BAAE5A /* ColorCubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7672F19B194DE83000BAAE5A /* ColorCubeViewController.swift */; };
+		7672F19F194DE9F800BAAE5A /* InstaCubeGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 7672F19D194DE9F800BAAE5A /* InstaCubeGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7672F1A0194DE9F800BAAE5A /* InstaCubeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7672F19E194DE9F800BAAE5A /* InstaCubeGenerator.m */; };
+		7672F1D0194DF63000BAAE5A /* colorCube_vibrance.png in Resources */ = {isa = PBXBuildFile; fileRef = 7672F1CD194DF63000BAAE5A /* colorCube_vibrance.png */; };
+		7672F1D1194DF63000BAAE5A /* colorCube_threshold.png in Resources */ = {isa = PBXBuildFile; fileRef = 7672F1CE194DF63000BAAE5A /* colorCube_threshold.png */; };
+		7672F1D2194DF63000BAAE5A /* colorCube_solarize.png in Resources */ = {isa = PBXBuildFile; fileRef = 7672F1CF194DF63000BAAE5A /* colorCube_solarize.png */; };
+		7672F1D4194DF76C00BAAE5A /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = 7672F1D3194DF76C00BAAE5A /* example.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,8 +84,6 @@
 		7672F146194DE3E000BAAE5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7672F148194DE3E000BAAE5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7672F149194DE3E000BAAE5A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7672F14B194DE3E000BAAE5A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7672F14C194DE3E000BAAE5A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7672F14F194DE3E000BAAE5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7672F151194DE3E000BAAE5A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7672F157194DE3E000BAAE5A /* InstaCubeExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaCubeExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +95,14 @@
 		7672F176194DE3F800BAAE5A /* InstaCubeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaCubeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7672F17C194DE3F800BAAE5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7672F17D194DE3F800BAAE5A /* InstaCubeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaCubeTests.m; sourceTree = "<group>"; };
+		7672F19A194DE82F00BAAE5A /* InstaCubeExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InstaCubeExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		7672F19B194DE83000BAAE5A /* ColorCubeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCubeViewController.swift; sourceTree = "<group>"; };
+		7672F19D194DE9F800BAAE5A /* InstaCubeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstaCubeGenerator.h; sourceTree = "<group>"; };
+		7672F19E194DE9F800BAAE5A /* InstaCubeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstaCubeGenerator.m; sourceTree = "<group>"; };
+		7672F1CD194DF63000BAAE5A /* colorCube_vibrance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorCube_vibrance.png; sourceTree = "<group>"; };
+		7672F1CE194DF63000BAAE5A /* colorCube_threshold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorCube_threshold.png; sourceTree = "<group>"; };
+		7672F1CF194DF63000BAAE5A /* colorCube_solarize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorCube_solarize.png; sourceTree = "<group>"; };
+		7672F1D3194DF76C00BAAE5A /* example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,13 +164,15 @@
 		7672F143194DE3E000BAAE5A /* InstaCubeExample */ = {
 			isa = PBXGroup;
 			children = (
+				7672F1CC194DF62300BAAE5A /* Cubes */,
 				7672F148194DE3E000BAAE5A /* AppDelegate.h */,
 				7672F149194DE3E000BAAE5A /* AppDelegate.m */,
-				7672F14B194DE3E000BAAE5A /* ViewController.h */,
-				7672F14C194DE3E000BAAE5A /* ViewController.m */,
+				7672F19B194DE83000BAAE5A /* ColorCubeViewController.swift */,
 				7672F14E194DE3E000BAAE5A /* Main.storyboard */,
+				7672F1D3194DF76C00BAAE5A /* example.png */,
 				7672F151194DE3E000BAAE5A /* Images.xcassets */,
 				7672F144194DE3E000BAAE5A /* Supporting Files */,
+				7672F19A194DE82F00BAAE5A /* InstaCubeExample-Bridging-Header.h */,
 			);
 			path = InstaCubeExample;
 			sourceTree = "<group>";
@@ -193,6 +207,8 @@
 			isa = PBXGroup;
 			children = (
 				7672F170194DE3F800BAAE5A /* InstaCube.h */,
+				7672F19D194DE9F800BAAE5A /* InstaCubeGenerator.h */,
+				7672F19E194DE9F800BAAE5A /* InstaCubeGenerator.m */,
 				7672F16E194DE3F800BAAE5A /* Supporting Files */,
 			);
 			path = InstaCube;
@@ -223,6 +239,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7672F1CC194DF62300BAAE5A /* Cubes */ = {
+			isa = PBXGroup;
+			children = (
+				7672F1CD194DF63000BAAE5A /* colorCube_vibrance.png */,
+				7672F1CE194DF63000BAAE5A /* colorCube_threshold.png */,
+				7672F1CF194DF63000BAAE5A /* colorCube_solarize.png */,
+			);
+			name = Cubes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -231,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7672F171194DE3F800BAAE5A /* InstaCube.h in Headers */,
+				7672F19F194DE9F800BAAE5A /* InstaCubeGenerator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,8 +390,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7672F1D4194DF76C00BAAE5A /* example.png in Resources */,
+				7672F1D1194DF63000BAAE5A /* colorCube_threshold.png in Resources */,
+				7672F1D0194DF63000BAAE5A /* colorCube_vibrance.png in Resources */,
 				7672F150194DE3E000BAAE5A /* Main.storyboard in Resources */,
 				7672F152194DE3E000BAAE5A /* Images.xcassets in Resources */,
+				7672F1D2194DF63000BAAE5A /* colorCube_solarize.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,7 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7672F14D194DE3E000BAAE5A /* ViewController.m in Sources */,
+				7672F19C194DE83000BAAE5A /* ColorCubeViewController.swift in Sources */,
 				7672F14A194DE3E000BAAE5A /* AppDelegate.m in Sources */,
 				7672F147194DE3E000BAAE5A /* main.m in Sources */,
 			);
@@ -414,6 +445,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7672F1A0194DE9F800BAAE5A /* InstaCubeGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,9 +580,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = InstaCubeExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "InstaCubeExample/InstaCubeExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -559,9 +594,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = InstaCubeExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "InstaCubeExample/InstaCubeExample-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -696,6 +733,7 @@
 				7672F163194DE3E000BAAE5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7672F164194DE3E000BAAE5A /* Build configuration list for PBXNativeTarget "InstaCubeExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -704,6 +742,7 @@
 				7672F166194DE3E000BAAE5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7672F185194DE3F800BAAE5A /* Build configuration list for PBXNativeTarget "InstaCube" */ = {
 			isa = XCConfigurationList;
@@ -712,6 +751,7 @@
 				7672F187194DE3F800BAAE5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7672F189194DE3F800BAAE5A /* Build configuration list for PBXNativeTarget "InstaCubeTests" */ = {
 			isa = XCConfigurationList;
@@ -720,6 +760,7 @@
 				7672F18B194DE3F800BAAE5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
