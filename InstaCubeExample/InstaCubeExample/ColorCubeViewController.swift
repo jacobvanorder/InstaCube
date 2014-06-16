@@ -72,40 +72,13 @@ class ColorCubeViewController : UIViewController, UITableViewDataSource, UITable
     }
 }
 
-/*
-#pragma mark - UITableViewDataSource
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return <#number#>;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView
- numberOfRowsInSection:(NSInteger)section
-{
-    return <#number#>
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView
-         cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#reuseIdentifier#> forIndexPath:<#indexPath#>];
-
-    [self configureCell:cell forRowAtIndexPath:indexPath];
-
-    return cell;
-}
-
-- (void)configureCell:(UITableViewCell *)cell
-    forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    <#statements#>
-}
-*/
-
 enum ColorCubeFilterList : String {
     case solarize = "colorCube_solarize"
     case vibrance = "colorCube_vibrance"
     case threshold = "colorCube_threshold"
+    case warming = "colorCube_warming"
+    case green = "colorCube_green"
+    case moody = "colorCube_moody"
     
     var displayName : String {
         switch self {
@@ -115,10 +88,16 @@ enum ColorCubeFilterList : String {
                 return "Vibrance"
             case .threshold:
                 return "Threshold"
+            case .green:
+                return "Green Hue"
+            case .warming:
+                return "Warming"
+            case .moody:
+                return "Moody"
             default:
                 return "No display name"
             }
     }
     
-    static let allValues = [solarize, vibrance, threshold]
+    static let allValues = [solarize, vibrance, threshold, green, warming, moody]
 }

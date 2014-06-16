@@ -24,6 +24,9 @@
 		7672F1D1194DF63000BAAE5A /* colorCube_threshold.png in Resources */ = {isa = PBXBuildFile; fileRef = 7672F1CE194DF63000BAAE5A /* colorCube_threshold.png */; };
 		7672F1D2194DF63000BAAE5A /* colorCube_solarize.png in Resources */ = {isa = PBXBuildFile; fileRef = 7672F1CF194DF63000BAAE5A /* colorCube_solarize.png */; };
 		7672F1D4194DF76C00BAAE5A /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = 7672F1D3194DF76C00BAAE5A /* example.png */; };
+		76B54218194FA0C2009495D5 /* colorCube_warming.png in Resources */ = {isa = PBXBuildFile; fileRef = 76B54216194FA0C2009495D5 /* colorCube_warming.png */; };
+		76B54219194FA0C2009495D5 /* colorCube_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 76B54217194FA0C2009495D5 /* colorCube_green.png */; };
+		76B5421B194FA22D009495D5 /* colorCube_moody.png in Resources */ = {isa = PBXBuildFile; fileRef = 76B5421A194FA22D009495D5 /* colorCube_moody.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +106,9 @@
 		7672F1CE194DF63000BAAE5A /* colorCube_threshold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorCube_threshold.png; sourceTree = "<group>"; };
 		7672F1CF194DF63000BAAE5A /* colorCube_solarize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorCube_solarize.png; sourceTree = "<group>"; };
 		7672F1D3194DF76C00BAAE5A /* example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example.png; sourceTree = "<group>"; };
+		76B54216194FA0C2009495D5 /* colorCube_warming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorCube_warming.png; sourceTree = "<group>"; };
+		76B54217194FA0C2009495D5 /* colorCube_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorCube_green.png; sourceTree = "<group>"; };
+		76B5421A194FA22D009495D5 /* colorCube_moody.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorCube_moody.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +251,9 @@
 				7672F1CD194DF63000BAAE5A /* colorCube_vibrance.png */,
 				7672F1CE194DF63000BAAE5A /* colorCube_threshold.png */,
 				7672F1CF194DF63000BAAE5A /* colorCube_solarize.png */,
+				76B54216194FA0C2009495D5 /* colorCube_warming.png */,
+				76B54217194FA0C2009495D5 /* colorCube_green.png */,
+				76B5421A194FA22D009495D5 /* colorCube_moody.png */,
 			);
 			name = Cubes;
 			sourceTree = "<group>";
@@ -394,8 +403,11 @@
 				7672F1D1194DF63000BAAE5A /* colorCube_threshold.png in Resources */,
 				7672F1D0194DF63000BAAE5A /* colorCube_vibrance.png in Resources */,
 				7672F150194DE3E000BAAE5A /* Main.storyboard in Resources */,
+				76B54219194FA0C2009495D5 /* colorCube_green.png in Resources */,
+				76B5421B194FA22D009495D5 /* colorCube_moody.png in Resources */,
 				7672F152194DE3E000BAAE5A /* Images.xcassets in Resources */,
 				7672F1D2194DF63000BAAE5A /* colorCube_solarize.png in Resources */,
+				76B54218194FA0C2009495D5 /* colorCube_warming.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

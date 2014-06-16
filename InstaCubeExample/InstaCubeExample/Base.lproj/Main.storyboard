@@ -27,7 +27,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="ast-A8-4od">
+                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="ast-A8-4od">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ast-A8-4od" id="CqB-5T-IVS">
@@ -57,10 +57,10 @@
                                 <exclude reference="krK-QQ-uoK"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="x5D-Cv-ORa"/>
                                 <exclude reference="Ose-UH-ZF3"/>
                                 <exclude reference="WtB-Ic-wZY"/>
                                 <exclude reference="ue5-wq-v6a"/>
-                                <exclude reference="x5D-Cv-ORa"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -68,10 +68,10 @@
                                 <include reference="krK-QQ-uoK"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="x5D-Cv-ORa"/>
                                 <include reference="Ose-UH-ZF3"/>
                                 <include reference="WtB-Ic-wZY"/>
                                 <include reference="ue5-wq-v6a"/>
-                                <include reference="x5D-Cv-ORa"/>
                             </mask>
                         </variation>
                     </view>
