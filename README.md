@@ -7,9 +7,9 @@ The Color Cube Core Image filter is [woefully](https://developer.apple.com/libra
 
 ####So, let's talk about [Color Lookup Tables](http://en.wikipedia.org/wiki/Colour_look-up_table).
 
-Essentially, if you were think of each RGBA value having a color associated with it, think of a dictionary (or a "lookup" "table") that has uses that RGBA value as a key which then returns a new value to use in it's place. 
+Essentially, if you were to think of each RGBA value having a color associated with it, think of a dictionary (or a "lookup" "table") that has uses that RGBA value as a key which then returns a new value to use in it's place. 
 
-The roots in LUTs come from computer graphics and video games in order to quickly alter the appearance of graphics without a heavy cost. In fact, it was [this article](http://udn.epicgames.com/Three/ColorGrading.html) that got the ball rolling. 
+The roots of LUTs come from computer graphics and video games in order to quickly alter the appearance of graphics without a heavy cost. In fact, it was [this article](http://udn.epicgames.com/Three/ColorGrading.html) that got the ball rolling. 
 
 How so? Apple describes their color cube as this:
 
