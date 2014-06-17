@@ -13,11 +13,11 @@ The roots in LUTs come from computer graphics and video games in order to quickl
 
 How so? Apple describes their color cube as this:
 
-[color cube](https://github.com/jacobvanorder/InstaCube/blob/master/Readme%20Images/appleCube.png)
+![color cube](https://github.com/jacobvanorder/InstaCube/blob/master/Readme%20Images/appleCube.png)
 
 But in actuality, it looks like this: 
 
-[color strip](https://github.com/jacobvanorder/InstaCube/blob/master/Readme%20Images/colorCube-16.png)
+![color strip](https://github.com/jacobvanorder/InstaCube/blob/master/Readme%20Images/colorCube-16.png)
 
 ####Great.
 
