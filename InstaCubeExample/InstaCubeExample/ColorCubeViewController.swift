@@ -51,6 +51,13 @@ class ColorCubeViewController : UIViewController, UITableViewDataSource, UITable
         mainImageView.image = UIImage(CIImage: outgoingImage)
     }
     
+    @IBAction func imageViewWasTapped(sender : UITapGestureRecognizer) {
+        if sender.state == .Ended {
+            let rawImage = UIImage(named: "example")
+            mainImageView.image = rawImage;
+        }
+    }
+    
     func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
         return ColorCubeFilterList.allValues.count
     }
