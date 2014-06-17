@@ -27,6 +27,7 @@
 		76B54218194FA0C2009495D5 /* colorCube_warming.png in Resources */ = {isa = PBXBuildFile; fileRef = 76B54216194FA0C2009495D5 /* colorCube_warming.png */; };
 		76B54219194FA0C2009495D5 /* colorCube_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 76B54217194FA0C2009495D5 /* colorCube_green.png */; };
 		76B5421B194FA22D009495D5 /* colorCube_moody.png in Resources */ = {isa = PBXBuildFile; fileRef = 76B5421A194FA22D009495D5 /* colorCube_moody.png */; };
+		76B54220194FE550009495D5 /* colorCube_moody.png in Resources */ = {isa = PBXBuildFile; fileRef = 76B5421A194FA22D009495D5 /* colorCube_moody.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -429,6 +430,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76B54220194FE550009495D5 /* colorCube_moody.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
