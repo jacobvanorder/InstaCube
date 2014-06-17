@@ -31,6 +31,14 @@ What this means is that you take a generic key image like what's above and, usin
     
 The resulting CIFilter will be of the type ColorCube but still need an input image in order to get the resulting output image. 
 
+For example, applying a black & white plus a solarization filter results in this:
+
+![Solarized Key Image](https://raw.githubusercontent.com/jacobvanorder/InstaCube/master/InstaCubeExample/InstaCubeExample/colorCube_solarize.png)
+
+Using the Color Cube filter on the image results in:
+
+![Before](https://raw.githubusercontent.com/jacobvanorder/InstaCube/master/Readme%20Images/Before.png) to ![After](https://raw.githubusercontent.com/jacobvanorder/InstaCube/master/Readme%20Images/After.png)
+
 ####Questions, comments, suggestions?
 
 [Email](mailto:jacob@sushigrass.com) or [Twitter](http://www.twitter.com/jacobvo)
