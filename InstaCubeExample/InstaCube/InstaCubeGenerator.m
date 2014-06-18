@@ -16,16 +16,13 @@
 
 + (CIFilter *)instaCubeWithKeyImageName:(NSString *)keyImageString onBundle:(NSBundle *)bundleOrNil {
     NSBundle *bundle = (bundleOrNil) ? : [NSBundle mainBundle];
-    NSString *pathString = [bundle pathForResource:keyImageString ofType:@"png"];
-    if (pathString) {
-        NSData *imageData = [NSData dataWithContentsOfFile:pathString];
-        if (imageData) {
-            UIImage *keyImage = [UIImage imageWithData:imageData];
-            if (keyImage) {
-                return [self instaCubeWithKeyImage:keyImage];
-            }
-        }
+    UIImage *keyImage = [UIImage imageNamed:keyImageString
+                                   inBundle:bundle
+              compatibleWithTraitCollection:nil];
+    if (keyImage) {
+        return [self instaCubeWithKeyImage:keyImage];
     }
+    
     return nil;
 }
 
