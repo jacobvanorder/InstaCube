@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.21" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -22,7 +22,19 @@
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="nEv-C4-056" secondAttribute="height" multiplier="1:1" id="Mke-nV-Gii"/>
+                                    <constraint firstAttribute="width" secondItem="nEv-C4-056" secondAttribute="height" multiplier="1:1" id="owL-V2-0WE"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="owL-V2-0WE"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="Mke-nV-Gii"/>
+                                        <include reference="owL-V2-0WE"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="8gi-VD-Ser" appends="YES" id="BCk-1G-SFp"/>
                                 </connections>
@@ -39,6 +51,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <variation key="widthClass=compact">
+                                    <rect key="frame" x="0.0" y="345" width="320" height="135"/>
+                                </variation>
+                                <variation key="widthClass=compact" ambiguous="YES"/>
                                 <connections>
                                     <outlet property="dataSource" destination="vXZ-lx-hvc" id="LCf-bx-XjN"/>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="PJB-3C-M8D"/>
@@ -47,13 +63,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="nEv-C4-056" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="8Gq-ki-1zz"/>
-                            <constraint firstAttribute="trailing" secondItem="krK-QQ-uoK" secondAttribute="trailing" id="Ose-UH-ZF3"/>
-                            <constraint firstAttribute="trailing" secondItem="nEv-C4-056" secondAttribute="trailing" constant="10" id="WbV-Ha-D1s"/>
-                            <constraint firstItem="krK-QQ-uoK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="WtB-Ic-wZY"/>
-                            <constraint firstItem="nEv-C4-056" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="ucS-k7-Ag4"/>
-                            <constraint firstItem="krK-QQ-uoK" firstAttribute="top" secondItem="nEv-C4-056" secondAttribute="bottom" constant="8" id="ue5-wq-v6a"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="krK-QQ-uoK" secondAttribute="bottom" id="x5D-Cv-ORa"/>
+                            <constraint firstItem="krK-QQ-uoK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="0q1-ik-PrB"/>
+                            <constraint firstItem="nEv-C4-056" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="3vp-9w-HMi"/>
+                            <constraint firstAttribute="trailing" secondItem="krK-QQ-uoK" secondAttribute="trailing" id="9bh-NM-u72"/>
+                            <constraint firstAttribute="trailing" secondItem="nEv-C4-056" secondAttribute="trailing" constant="10" id="TrY-E9-Fqg"/>
+                            <constraint firstItem="krK-QQ-uoK" firstAttribute="top" secondItem="nEv-C4-056" secondAttribute="bottom" constant="15" id="XDW-wx-zYs"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="krK-QQ-uoK" secondAttribute="bottom" id="ZM7-Xh-gOz">
+                                <variation key="widthClass=compact"/>
+                            </constraint>
+                            <constraint firstItem="nEv-C4-056" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="nSF-cL-STo"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
@@ -61,10 +79,13 @@
                                 <exclude reference="krK-QQ-uoK"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="x5D-Cv-ORa"/>
-                                <exclude reference="Ose-UH-ZF3"/>
-                                <exclude reference="WtB-Ic-wZY"/>
-                                <exclude reference="ue5-wq-v6a"/>
+                                <exclude reference="3vp-9w-HMi"/>
+                                <exclude reference="TrY-E9-Fqg"/>
+                                <exclude reference="nSF-cL-STo"/>
+                                <exclude reference="0q1-ik-PrB"/>
+                                <exclude reference="9bh-NM-u72"/>
+                                <exclude reference="XDW-wx-zYs"/>
+                                <exclude reference="ZM7-Xh-gOz"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -72,10 +93,13 @@
                                 <include reference="krK-QQ-uoK"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="x5D-Cv-ORa"/>
-                                <include reference="Ose-UH-ZF3"/>
-                                <include reference="WtB-Ic-wZY"/>
-                                <include reference="ue5-wq-v6a"/>
+                                <include reference="3vp-9w-HMi"/>
+                                <include reference="TrY-E9-Fqg"/>
+                                <include reference="nSF-cL-STo"/>
+                                <include reference="0q1-ik-PrB"/>
+                                <include reference="9bh-NM-u72"/>
+                                <include reference="XDW-wx-zYs"/>
+                                <include reference="ZM7-Xh-gOz"/>
                             </mask>
                         </variation>
                     </view>
