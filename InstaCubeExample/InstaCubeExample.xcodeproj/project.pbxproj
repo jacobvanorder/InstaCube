@@ -28,6 +28,8 @@
 		76B54219194FA0C2009495D5 /* colorCube_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 76B54217194FA0C2009495D5 /* colorCube_green.png */; };
 		76B5421B194FA22D009495D5 /* colorCube_moody.png in Resources */ = {isa = PBXBuildFile; fileRef = 76B5421A194FA22D009495D5 /* colorCube_moody.png */; };
 		76B54220194FE550009495D5 /* colorCube_moody.png in Resources */ = {isa = PBXBuildFile; fileRef = 76B5421A194FA22D009495D5 /* colorCube_moody.png */; };
+		76B54222194FF3A2009495D5 /* colorCube_chrome.png in Resources */ = {isa = PBXBuildFile; fileRef = 76B54221194FF3A2009495D5 /* colorCube_chrome.png */; };
+		76B54224194FF42D009495D5 /* colorCube_posterize.png in Resources */ = {isa = PBXBuildFile; fileRef = 76B54223194FF42D009495D5 /* colorCube_posterize.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +112,8 @@
 		76B54216194FA0C2009495D5 /* colorCube_warming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorCube_warming.png; sourceTree = "<group>"; };
 		76B54217194FA0C2009495D5 /* colorCube_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorCube_green.png; sourceTree = "<group>"; };
 		76B5421A194FA22D009495D5 /* colorCube_moody.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorCube_moody.png; sourceTree = "<group>"; };
+		76B54221194FF3A2009495D5 /* colorCube_chrome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorCube_chrome.png; sourceTree = "<group>"; };
+		76B54223194FF42D009495D5 /* colorCube_posterize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorCube_posterize.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,12 +253,14 @@
 		7672F1CC194DF62300BAAE5A /* Cubes */ = {
 			isa = PBXGroup;
 			children = (
+				76B54221194FF3A2009495D5 /* colorCube_chrome.png */,
 				7672F1CD194DF63000BAAE5A /* colorCube_vibrance.png */,
 				7672F1CE194DF63000BAAE5A /* colorCube_threshold.png */,
 				7672F1CF194DF63000BAAE5A /* colorCube_solarize.png */,
 				76B54216194FA0C2009495D5 /* colorCube_warming.png */,
 				76B54217194FA0C2009495D5 /* colorCube_green.png */,
 				76B5421A194FA22D009495D5 /* colorCube_moody.png */,
+				76B54223194FF42D009495D5 /* colorCube_posterize.png */,
 			);
 			name = Cubes;
 			sourceTree = "<group>";
@@ -402,11 +408,13 @@
 			files = (
 				7672F1D4194DF76C00BAAE5A /* example.png in Resources */,
 				7672F1D1194DF63000BAAE5A /* colorCube_threshold.png in Resources */,
+				76B54222194FF3A2009495D5 /* colorCube_chrome.png in Resources */,
 				7672F1D0194DF63000BAAE5A /* colorCube_vibrance.png in Resources */,
 				7672F150194DE3E000BAAE5A /* Main.storyboard in Resources */,
 				76B54219194FA0C2009495D5 /* colorCube_green.png in Resources */,
 				76B5421B194FA22D009495D5 /* colorCube_moody.png in Resources */,
 				7672F152194DE3E000BAAE5A /* Images.xcassets in Resources */,
+				76B54224194FF42D009495D5 /* colorCube_posterize.png in Resources */,
 				7672F1D2194DF63000BAAE5A /* colorCube_solarize.png in Resources */,
 				76B54218194FA0C2009495D5 /* colorCube_warming.png in Resources */,
 			);
