@@ -39,6 +39,10 @@ Using the Color Cube filter on the image results in:
 
 ![Before](https://raw.githubusercontent.com/jacobvanorder/InstaCube/master/Readme%20Images/Before.png) to ![After](https://raw.githubusercontent.com/jacobvanorder/InstaCube/master/Readme%20Images/After.png)
 
+####Usage
+
+Clone this project. If you want the framework for you own goodness, build the Aggregate target using Xcode. The resulting fat binary framework will be placed on your Desktop. Drag and drop that into your project and use the fancy `import` in Swift or #import in Objective-C. The headers are basic at this point but will be built upon.
+
 ####Questions, comments, suggestions?
 
 [Email](mailto:jacob@sushigrass.com) or [Twitter](http://www.twitter.com/jacobvo)

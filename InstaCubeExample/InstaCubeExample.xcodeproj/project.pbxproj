@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		76A1212E19561A6B00699818 /* InstaCubeAggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 76A1213119561A6B00699818 /* Build configuration list for PBXAggregateTarget "InstaCubeAggregate" */;
+			buildPhases = (
+				76A1213319561ACD00699818 /* Build Universal Framework */,
+			);
+			dependencies = (
+			);
+			name = InstaCubeAggregate;
+			productName = "InstaCube Aggregate";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		7672F147194DE3E000BAAE5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7672F146194DE3E000BAAE5A /* main.m */; };
 		7672F14A194DE3E000BAAE5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7672F149194DE3E000BAAE5A /* AppDelegate.m */; };
@@ -378,6 +392,9 @@
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = 7672F16B194DE3F800BAAE5A;
 					};
+					76A1212E19561A6B00699818 = {
+						CreatedOnToolsVersion = 6.0;
+					};
 				};
 			};
 			buildConfigurationList = 7672F13C194DE3E000BAAE5A /* Build configuration list for PBXProject "InstaCubeExample" */;
@@ -397,6 +414,7 @@
 				7672F156194DE3E000BAAE5A /* InstaCubeExampleTests */,
 				7672F16B194DE3F800BAAE5A /* InstaCube */,
 				7672F175194DE3F800BAAE5A /* InstaCubeTests */,
+				76A1212E19561A6B00699818 /* InstaCubeAggregate */,
 			);
 		};
 /* End PBXProject section */
@@ -443,6 +461,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76A1213319561ACD00699818 /* Build Universal Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Universal Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#Thanks to http://spin.atomicobject.com/2011/12/13/building-a-universal-framework-for-ios/ for the start\n#To get this to work with a Xcode 6 Cocoa Touch Framework, create Framework\n#Then create a new Aggregate Target. Throw this script into a Build Script Phrase on the Aggregate\n#Tip: if you want the resulting framework to be the same name as your Framework, change the Aggregate's product name\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PRODUCT_NAME}.framework\"\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PRODUCT_NAME}.framework\"\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${PRODUCT_NAME}.framework\"\n\n#build both frameworks\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphonesimulator -target ${PROJECT_NAME} -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphoneos -target ${PROJECT_NAME} -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos\n\n#create directory for universal\nmkdir \"${UNIVERSAL_LIBRARY_DIR}\"\nmkdir \"${FRAMEWORK}\"\n\n#copy the headers\ncp -r \"${DEVICE_LIBRARY_PATH}/Headers\" \"${FRAMEWORK}/Headers\"\n\n#copy all of the other files associated\ncp \"${DEVICE_LIBRARY_PATH}/Info.plist\" \"${FRAMEWORK}\"\ncp -r \"${DEVICE_LIBRARY_PATH}/Modules\" \"${FRAMEWORK}/Modules\"\ncp \"${DEVICE_LIBRARY_PATH}/ResourceRules.plist\" \"${FRAMEWORK}\"\n\n#make fat binary\nlipo \"${SIMULATOR_LIBRARY_PATH}/${PRODUCT_NAME}\" \"${DEVICE_LIBRARY_PATH}/${PRODUCT_NAME}\" -create -output \"${FRAMEWORK}/${PRODUCT_NAME}\"\n\n#copy the result to your desktop so you don't have to hunt for it in DerivedData\ncp -r \"${FRAMEWORK}\" \"${HOME}/Desktop/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7672F13D194DE3E000BAAE5A /* Sources */ = {
@@ -667,6 +702,8 @@
 		7672F186194DE3F800BAAE5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -691,6 +728,8 @@
 		7672F187194DE3F800BAAE5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -740,6 +779,20 @@
 			};
 			name = Release;
 		};
+		76A1212F19561A6B00699818 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = InstaCube;
+			};
+			name = Debug;
+		};
+		76A1213019561A6B00699818 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = InstaCube;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -784,6 +837,15 @@
 			buildConfigurations = (
 				7672F18A194DE3F800BAAE5A /* Debug */,
 				7672F18B194DE3F800BAAE5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76A1213119561A6B00699818 /* Build configuration list for PBXAggregateTarget "InstaCubeAggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76A1212F19561A6B00699818 /* Debug */,
+				76A1213019561A6B00699818 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
