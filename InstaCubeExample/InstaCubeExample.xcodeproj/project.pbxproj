@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7627499B195A432800688499 /* colorCube_inverse.png in Resources */ = {isa = PBXBuildFile; fileRef = 7627499A195A432800688499 /* colorCube_inverse.png */; };
 		7672F147194DE3E000BAAE5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7672F146194DE3E000BAAE5A /* main.m */; };
 		7672F14A194DE3E000BAAE5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7672F149194DE3E000BAAE5A /* AppDelegate.m */; };
 		7672F150194DE3E000BAAE5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7672F14E194DE3E000BAAE5A /* Main.storyboard */; };
@@ -85,6 +86,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7627499A195A432800688499 /* colorCube_inverse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorCube_inverse.png; sourceTree = "<group>"; };
 		7672F141194DE3E000BAAE5A /* InstaCubeExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaCubeExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7672F145194DE3E000BAAE5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7672F146194DE3E000BAAE5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 		7672F1CC194DF62300BAAE5A /* Cubes */ = {
 			isa = PBXGroup;
 			children = (
+				7627499A195A432800688499 /* colorCube_inverse.png */,
 				76B54221194FF3A2009495D5 /* colorCube_chrome.png */,
 				7672F1CD194DF63000BAAE5A /* colorCube_vibrance.png */,
 				7672F1CE194DF63000BAAE5A /* colorCube_threshold.png */,
@@ -411,6 +414,7 @@
 				76B54222194FF3A2009495D5 /* colorCube_chrome.png in Resources */,
 				7672F1D0194DF63000BAAE5A /* colorCube_vibrance.png in Resources */,
 				7672F150194DE3E000BAAE5A /* Main.storyboard in Resources */,
+				7627499B195A432800688499 /* colorCube_inverse.png in Resources */,
 				76B54219194FA0C2009495D5 /* colorCube_green.png in Resources */,
 				76B5421B194FA22D009495D5 /* colorCube_moody.png in Resources */,
 				7672F152194DE3E000BAAE5A /* Images.xcassets in Resources */,

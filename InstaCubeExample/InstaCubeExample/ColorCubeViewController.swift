@@ -85,6 +85,7 @@ enum ColorCubeFilterList : String {
     case moody = "colorCube_moody"
     case chrome = "colorCube_chrome"
     case posterize = "colorCube_posterize"
+    case inverse = "colorCube_inverse"
     
     var displayName : String {
         switch self {
@@ -104,10 +105,12 @@ enum ColorCubeFilterList : String {
                 return "Chrome"
             case .posterize:
                 return "Posterize"
+        case .inverse:
+            return "Inverse"
             default:
                 return "No display name"
             }
     }
     
-    static let allValues = [solarize, vibrance, threshold, green, warming, moody, chrome, posterize]
+    static let allValues = [solarize, vibrance, threshold, green, warming, moody, chrome, posterize, inverse]
 }
