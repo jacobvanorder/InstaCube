@@ -13,8 +13,8 @@ import InstaCube
 
 class ColorCubeViewController : UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet var mainImageView : UIImageView
-    @IBOutlet var colorCubeSelectionColorCube : UITableView
+    @IBOutlet var mainImageView : UIImageView?
+    @IBOutlet var colorCubeSelectionColorCube : UITableView?
     var currentFilter : ColorCubeFilterList
     var rawImage : UIImage { return UIImage(named: "example") }
     
@@ -47,12 +47,16 @@ class ColorCubeViewController : UIViewController, UITableViewDataSource, UITable
         }
         
         let outgoingImage = colorCubeCIFilter.valueForKey(kCIOutputImageKey) as CIImage
-        mainImageView.image = UIImage(CIImage: outgoingImage)
+        if let checkedImageView = mainImageView {
+            checkedImageView.image = UIImage(CIImage: outgoingImage)
+        }
     }
     
     @IBAction func imageViewWasTapped(sender : UITapGestureRecognizer) {
         if sender.state == .Ended {
-            mainImageView.image = rawImage;
+            if let checkedImageView = mainImageView {
+                checkedImageView.image = rawImage
+            }
         }
     }
     
