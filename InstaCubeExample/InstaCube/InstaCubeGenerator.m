@@ -31,11 +31,16 @@
     CGImageRef keyCgImage = keyImage.CGImage;
     int sizeOfCube = floor(CGImageGetWidth(keyCgImage));
     NSData *colorCubeNSData = [self colorCubeDataForCGImageRef:keyCgImage];
-    
-    CIFilter *instaCube = [CIFilter filterWithName:@"CIColorCube"
-                               withInputParameters:@{@"inputCubeDimension" : @(sizeOfCube),
-                                                     @"inputCubeData" : colorCubeNSData}];
-    
+  
+    CGColorSpaceRef colorSpace;
+    colorSpace = CGColorSpaceCreateDeviceRGB();
+  
+    CIFilter *instaCube = [CIFilter filterWithName:@"CIColorCubeWithColorSpace"
+                             withInputParameters:@{@"inputCubeDimension" : @(sizeOfCube),
+                                                   @"inputCubeData" : colorCubeNSData,
+                                                   @"inputColorSpace" : (__bridge id) colorSpace}];
+  
+    CGColorSpaceRelease(colorSpace);
     return instaCube;
 }
 
